@@ -22,7 +22,7 @@ class BaseHandler(tornado.web.RequestHandler):
         """Preprocess requests."""
         try:
             if self.request.headers['Content-Type'].startswith('application/json'):
-                self.json_args = json.loads(self.request.body)
+                self.json_args = json.loads(self.request.body.decode('utf-8'))
         except KeyError:
             self.json_args = None
 
