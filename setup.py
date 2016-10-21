@@ -84,7 +84,7 @@ setup(
         'APScheduler == 3.0.0',
         'SQLAlchemy == 1.0.0',
         'future == 0.15.2',
-        'tornado == 4.3.0',
+        'tornado == 4.4.2',
         'python-dateutil == 2.2',
     ],
     classifiers=classifiers,
