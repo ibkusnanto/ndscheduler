@@ -18,6 +18,7 @@ from ndscheduler.server.handlers import executions
 from ndscheduler.server.handlers import index
 from ndscheduler.server.handlers import jobs
 
+logging.basicConfig(filename= '/var/log/forex_scheduler.log', format='%(asctime)s %(name)-12s %(levelname)-8s %(message)s', filemode='a')
 logger = logging.getLogger(__name__)
 
 
