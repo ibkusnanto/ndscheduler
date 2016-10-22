@@ -28,6 +28,7 @@ class SchedulerServer:
     singleton = None
 
     def __init__(self, scheduler_instance):
+        tornado.options.parse_command_line()
         # Start scheduler
         self.scheduler_manager = scheduler_instance
 
