@@ -10,6 +10,7 @@ import signal
 import sys
 
 import tornado
+import tornado.options
 
 from ndscheduler import settings
 from ndscheduler.core import scheduler_manager
